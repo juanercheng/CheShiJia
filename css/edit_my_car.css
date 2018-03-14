@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+
+/*---------------release_options---------------------*/
+
+.nBList:nth-child(4){border:2px solid #f2f1f1;  border-bottom:3px solid #cc1612;}
+.releaseOptions{width: 1200px;text-align: center;border: 1px solid #e4e4e4;margin: 20px auto;box-sizing: border-box;padding: 30px 0;}
+.releaseOptions input,textarea{width: 400px;height: 40px;line-height: 40px;border: 1px solid #e4e4e4;padding-left: 10px;color: #999;resize: none;}
+.releaseOptions p{margin-bottom: 20px;}
+.releaseOptions span{display: inline-block;font-size: 16px;width: 100px;text-align:right;margin-right: 10px;}
+textarea{height: 120px;vertical-align: top;}
+button{width: 320px;height: 50px;background: #c43027;color: #fff;font-size: 18px;border-radius: 5px;margin:20px 0;}
+.pcticter{height: 88px;margin-bottom: 10px;text-align: left;}
+.pcticter .pcticterAdd{height: 80px; display: inline-block;text-align: left;}
+.pageDown{position: relative;}
+.pageDown em{position:absolute;top: 13px;right: 360px;background: url(../imgs/page_down.png) no-repeat;width: 14px;height:14px;display: inline-block;}
+.pageDown .money{background: none;}
+
+
+.releaseOptionsC .headlineOne{margin-left: 20px;margin-right: 20px; padding: 15px 10px;border-bottom: 2px solid #c43027;text-align: left;margin-bottom: 30px;}
+.releaseOptionsC .headlineOne span{display: inline-block;font-size: 22px;color: #111;}
+.imgLeftO:before{background: url(../imgs/icon.png) no-repeat;background-size:100px auto;}
+.releaseOptionsC .headlineOne span:before{background-position:-54px 0px;width: 30px;height: 27px;margin-right: 15px;margin-left: 4px;margin-bottom: -5px;}
+form{display: inline-block;vertical-align:top;}
+.addImgClick{margin-left: -85px;margin-top: 1px;}
+#fileImg{ width: 75px;height: 80px; vertical-align:top;background: url(../imgs/addimg.jpg) no-repeat;padding: 0px;}
+.copyImg{width: 80px;height: 80px;}
+
+
+
+/*-----------want_to_find_car------------------*/
+.findCarWant .nBList:nth-child(4){background: none;}
+.findCar{border:none;}
+.headlineOne{padding: 15px 0;border-bottom: 2px solid #c43027;text-align: left;margin-bottom: 40px;}
+.headlineOne span{display: inline-block;font-size: 22px;width: 150px;text-align: left;}
+.imgLeftO:before{background: url(../imgs/icon.png) no-repeat;background-size:100px auto;margin-bottom: -3px;}
+.headlineOne span:before{background-position:-53px -1px;width: 30px;height: 26px;margin-right: 15px;margin-left: 4px;}
+.pageDown .carStandard,.pageDown .carTime,.pageDown .carArea,pageDown .carStatus{display: inline-block;width: 400px;height: 40px;line-height: 40px;border: 1px solid #e4e4e4;padding-left: 10px;color: #999;resize: none;padding: 0px;margin: 0px;text-align: left;padding-left: 10px;}
+.releaseOptionsC{position: relative;}
+.carCssAdd{position: absolute;top: 129px;left: 448px;background: #bab9b9;display: none;}
+.carCssAdd li{text-align: left;margin: auto;width: 400px;height: 40px;line-height: 40px;border: 1px solid #e4e4e4;padding-left: 10px;color: #999;resize: none;}
+.intDispalynTime{top: 314px;left: 448px;}
+.intDispalynArea{top: 376px;left: 448px;}
+/*汽车品牌、规格、车系、车型弹框*/
+.intDispalynone{text-align: left;background: #fff;border: 1px solid #e4e4e4;left: 0px;width: 1200px;padding-top: 20px;}
+.intCheck span{font-weight: 600;}
+.intCheck em{display: inline-block;width: 108px;height: 30px;line-height: 30px; text-align: center;}
+.checkAddCss{background: #c43027;color: #fff;}
+.carStandard i{font-style: normal;color: #333;}
+.carStandard .primary{color: #999;}
+
+
+/*---------------release_options-补充--------------------*/
+.carCssAddT{position: absolute;top:42px;display: none;}
+.carCssAddT li{text-align: left;margin: auto;width: 400px;height: 40px;line-height: 40px;border: 1px solid #e4e4e4;padding-left: 10px;color: #999;resize: none;}
+.intDispalynStatus{top: 227px;left: 448px;}
+.intDispalynArea{top: 289px;left: 448px;}
+

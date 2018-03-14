@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="screen-orientation" content="portrait"><!--强制竖屏-->
+    <meta name="format-detection" content="telephone=no"><!-- 禁用自动识别电话号码 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>首页</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="layer/skin/layer.css" rel="stylesheet"><!--弹框css-->
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+<header></header>
+<div class="content">
+
+    <!--1.顶部轮播图-->
+    <!--start sectionOne-->
+    <section class="sectionOne clearfix">
+        <div class="test">
+            <div class="sectionLeft">
+                <h1>分类</h1>
+                <div class="findCar">
+                    <input type="text"    class="findInfo" placeholder="请输入品牌/车型/指导价快速搜索">
+                    <span class="findNow"></span>
+                    <!--&lt;!&ndash;输入关键字后系统提示汽车搜索信息&ndash;&gt;-->
+                    <!--<div class="release">-->
+                        <!--<ul id="release">-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;/输入关键字后系统提示汽车搜索信息&ndash;&gt;-->
+                </div>
+                <div class="ListOne">
+                    <h1>买车</h1>
+                    <ul class="sectionOneLeftUl_1">
+                    </ul>
+                </div>
+                <div class="ListOne ListTwo">
+                    <h1>寻车</h1>
+                    <ul class="sectionOneLeftUl_2">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sectionOneRight">
+            <div class="mobile swiper-container">
+                <!--焦点图-->
+                <div class="swiper-wrapper "></div>
+                <!-- Add Pagination -->
+                <div class="pageControl"><div class="swiper-pagination mobile-pagination"></div></div>
+                <!--<div class="swiper-pagination mobile-pagination"></div>-->
+            </div>
+        </div>
+    </section>
+    <!--end sectionOne-->
+
+    <!--轮播图之外的模块-->
+    <div class="newLayout">
+        <!--2.资源匹配模块-->
+        <!--start newSource-->
+        <section class="sectionTwo newSource"></section>
+        <!--end sectionThree-->
+
+        <!--热门推荐模块-->
+        <!--start sectionTwo-->
+        <section class="sectionTwo">
+            <div class="headlineOne">
+                <span class="imgLeftO">热门推荐</span>
+                <span class="titleLine"></span>
+                <a class="jumpTwo hotJump" href="main_ultra_low_purchase.html?type" style="display: none">更多</a>
+            </div>
+            <ul class="recommendT hotCar"></ul>
+        </section>
+
+        <!--end sectionTwo-->
+
+        <!--经销商资源模块-->
+        <!--start sectionThree(有改动)-->
+        <div class="sectionThreeContent">
+            <div class="mask">
+                <section class="sectionTwo sectionThree">
+                    <div class="headlineOne">
+                        <span class="imgLeftO">经销商资源</span>
+                        <span class="titleLine"></span>
+                        <a class="jumpTwo" href="main_ultra_low_purchase.html?type">更多</a>
+                    </div>
+                    <ul class="recommendT CarMarket"></ul>
+                </section>
+            </div>
+        </div>
+        <!--end sectionThree-->
+
+        <!--寻车资源模块-->
+        <!--start sectionFour-->
+        <section class="sectionTwo sectionFour">
+            <div class="headlineOne">
+                <span class="imgLeftO">寻车资源</span>
+                <span class="titleLine"></span>
+                <a class="jumpThree" href="main_find_car.html">更多</a>
+            </div>
+            <ul class="recommendT SearchCar"></ul>
+        </section>
+        <div class="aa" style="display:none;"></div>
+        <!--end sectionFour-->
+
+    </div>
+</div>
+    <footer></footer>
+
+</body>
+<script src="js/common/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="layer/layer.js" type="text/javascript"></script><!--弹框插件-->
+<script src="js/frame/frame.js" type="text/javascript"></script><!--该页面中有用到公共组件，控件需要引用-->
+<script src="js/common/common.js" type="text/javascript"></script><!--每个页面必须引用，公共view js的入口-->
+<script src="js/common/swiper.min.js" type="text/javascript"></script>
+<script src="js/common/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/view/index.js" type="text/javascript"></script>
+</html>

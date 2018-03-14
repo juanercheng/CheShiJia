@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="screen-orientation" content="portrait"><!--强制竖屏-->
+<meta name="format-detection" content="telephone=no"><!-- 禁用自动识别电话号码 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>忘记密码</title>
+<link href="css/common.css" rel="stylesheet">
+<link href="layer/skin/layer.css" rel="stylesheet"><!--弹框css-->
+<link href="css/log_in.css" rel="stylesheet">
+</head>
+<body>
+    <a href="index.html" class="enter">进入首页<img src="./imgs/aim_red.png" alt=""></a>
+    <!--start content-->
+    <div class="logoIn register forget">
+        <div class="show_content">
+            <div class="show_left">
+                <p>忘记密码</p>
+                <div class="line"></div>
+                <p class="downApp">下载APP</p>
+                <img src="./imgs/downLoad.jpg" style="width: 99px"  alt="">
+            </div>
+            <div class="show_right">
+                <div class="right_top">
+                    <span></span>
+                    <p>车是家</p>
+                    <p>一家专注汽车买卖的网站</p>
+                </div>
+                <div class="right_middle">
+                    <p class="logo_img"><span></span><input class="mobile" type="tel" placeholder="请输入手机号"  maxlength="11" ></p>
+                    <p class="logo_img"><span></span><input class="authCode" type="text" placeholder="请输入验证码" / ></p>
+                    <p class="logo_img getCode" data-type="true">获取验证码</p>
+                    <p class="logo_img"><span></span><input class="password" type="password" placeholder="请输入密码" / ></p>
+                    <p class="logo_img"><span></span><input class="password" type="password" placeholder="请输入密码" / ></p>
+                    <p class="agreement"><span class="written_consent_no"></span><span>阅读并同意<a target="_blank" href="agreenments.html">车是家服务协议</a></span></p>
+                    <button class="registerBtn">完成</button>
+                    <div class="others">
+                        <a href="log_in.html">登录</a>
+                    </div>
+                </div>
+                <div class="right_bottom">
+                    <ul>
+                        <li><a href="about_us.html">关于我们</a></li>
+                        <li><a href="about_us.html">联系我们</a></li>
+                        <li><a href="about_us.html">诚聘英才</a></li>
+                        <li><a href="about_us.html">合作伙伴</a></li>
+                    </ul>
+                    <div>
+                        <p>Copyright 2016 www.guazi.com All Rights Reserved</p>
+                        <p>京IP备15053955号 ICP证151071号</p>
+                        <p>京公安网备 11010802020161号</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end content-->
+
+    
+</body>
+<script src="js/common/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!--弹框插件-->
+<script src="layer/layer.js" type="text/javascript"></script>
+<script src="js/common/common.js" type="text/javascript"></script><!--每个页面必须引用，公共view js的入口-->
+<script src="js/view/register_forget.js" type="text/javascript"></script>
+<script src="js/frame/selectivizr.js" type="text/javascript"></script><!--兼容ie低版本css新增选择器问题-->
+<!--兼容ie8对padding-bottom解析问题-->
+<!--[if IE 8]>
+<script type="text/javascript">
+    $(".right_bottom ul").css("paddingBottom","34px");
+</script>
+<![endif]-->
+</html>

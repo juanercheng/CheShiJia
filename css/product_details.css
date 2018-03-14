@@ -1,0 +1,327 @@
+@charset "utf-8";
+/* CSS Document */
+.nBList:nth-child(2) {
+    border:2px solid #f2f1f1;
+    border-bottom:3px solid #cc1612;
+}
+.productDetails {
+    width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0 5px 10px #e6e6e6;
+}
+.productDetailsTop{
+    background-color: white;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.productDetailsTop ._img_car {
+    margin:25px;
+    width:398px;
+    height: 398px;
+    /*border:1px solid #ccc;*/
+    float: left;
+}
+.productDetailsTop ._img_car img{
+    width: 100%;
+    height: 100%;
+}
+
+.productDetails .pDInformation {
+    display: inline-block;
+    text-align: left;
+    padding-top: 25px;
+    margin-left: 25px;
+    width: 57%;
+    height: 450px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.productDetails p {
+    font-size: 16px;
+    color: #333;
+}
+
+.pDInformation > h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin:15px 0 20px;
+    line-height: 20px;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis;
+    white-space: normal; */
+    /* width: 90%; */
+    word-break: break-all;
+}
+
+.pDInformation > p:nth-child(2) em, .pDInformation > p:nth-child(2) {
+    font-size: 14px;
+    color: #666;
+}
+.pDInformation > p:nth-child(2){
+    background: #f6f7f8;
+    line-height: 50px;
+    margin-left: -10px;
+    padding-left: 10px;
+    width: 525px;
+}
+.pDInformation > p:nth-child(2) span {
+    font-size: 24px;
+    color: #c43027;
+    margin-right: 20px;
+}
+
+/*.pDInformation p:nth-child(5), .pDInformation p:nth-child(6){*/
+    /*margin-top: 18px;*/
+/*}*/
+
+/*.pDInformation p:nth-last-of-type(1) button:last-child {*/
+    /*background: #c43027;*/
+    /*margin-left: 60px;*/
+/*}*/
+
+.pDInformation p:nth-child(4) span {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #e4e4e4;
+}
+.pDInformation p:nth-child(4){
+    line-height: 30px;
+}
+.pDInformation p:nth-child(4) em {
+    width: 30px;
+    background: #eee;
+    border-right: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.pDInformation p:nth-child(4) em:last-child {
+    border-left: 1px solid #e4e4e4;
+    float: right;
+}
+
+.pDInformation p:nth-child(4) i {
+    display: inline-block;
+    width: 55px;
+    text-align: center;
+    font-style: normal;
+}
+
+.pDInformation .tel {
+    padding-top: 50px;
+    font-size: 22px;
+    color: orange;
+    font-weight: 600;
+    display: none;
+}
+
+.pDInformation .tel > em {
+    color: black;
+    font-weight: 100;
+    color: #666666;
+}
+
+
+/*顶部提示*/
+.detailTitle{
+    padding:20px 0;
+    padding-left: 10px;
+}
+.detailTitle span{
+    margin:0 5px;
+    font-size: 16px;
+}
+.detailTitle span:nth-of-type(2){
+    width: 8px;
+    height: 12px;
+    background: url("../imgs/page.png") -20px 0 no-repeat;
+    background-size: cover;
+}
+
+.productDetailsTop .carInfo{
+    margin:15px 0;
+}
+.productDetailsTop .carInfo span{
+    padding:5px 15px;
+    border:1px solid #dc2926;
+    border-radius: 20px;
+    color: #dc2926;
+    margin-right:10px;
+}
+
+/*按钮*/
+ .nowAsk,.buyBtn{
+    width: 131px;
+    height: 38px;
+    line-height: 38px;
+    border:1px solid #d92400;
+    background: white;
+    font-size: 16px;
+    color: #d92400;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.pDInformation p:nth-last-of-type(1) button:hover{
+    color: white;
+    background: #d92400;
+}
+.pDInformation p:nth-last-of-type(1) a{
+    float: right;
+    color: #d92400;
+    font-size: 14px;
+    margin-top:30px;
+}
+.pageDown {
+    position: relative;
+}
+.plus, .subtract {
+    cursor: default;
+}
+
+/*推荐车源*/
+.recommend{
+    padding:60px 12px 130px;
+}
+.recommend_top{
+    padding-left: 8px;
+    position: relative;
+    margin-bottom:30px;
+}
+.recommend_top .titleText{
+    font-size: 20px;
+    padding-bottom:10px;
+}
+.recommend_top .titleLine{
+    height: 3px;
+    width:45px;
+    background: #d92400;
+    position: absolute;
+    bottom: 0;
+    left:10px;
+}
+.recommend_top .more{
+    float: right;
+    font-size: 14px;
+    color: #636363;
+    padding:10px 20px;
+    border:1px solid #636363;
+}
+.recommend_top .more:hover {
+    background: #dc2827;
+    border-color: #dc2827;
+    color:white;
+}
+.recommend_top .more:hover:after{
+    background:url("../imgs/aim_white.png") no-repeat;
+}
+.recommend_top .more:after {
+    background: url(../imgs/aim_gray.png) no-repeat;
+    width: 15px;
+    height: 15px;
+    content: "";
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+    margin-top: -1px;
+}
+.carList li{
+    float: left;
+    margin-left: 12px;
+}
+.carList li:nth-of-type(1){
+    margin-left: 0;
+}
+.carInfo .address{
+    font-size:14px;
+}
+
+/*下拉框*/
+.drop{
+    font-size:16px;
+    position: relative;
+    /*margin-top:10px;*/
+}
+.drop span{
+    height: 30px;
+    line-height: 30px;
+}
+.drop ul{
+    /*height: 30px;*/
+    display: inline-block;
+    color: #ababab;
+    border:1px solid #e4e4e4;
+    position: absolute;
+    top:0;
+}
+.drop ul em{
+    width:14px;
+    height: 14px;
+    background: url("../imgs/page_down.png") no-repeat;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.drop li{
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    height: 30px;
+    padding:0 5px;
+    line-height: 30px;
+    background: white;
+}
+.drop li:hover{
+    background: #e5e5e5;
+}
+.dropOne{
+    z-index: 100;
+}
+.dropTwo{
+    z-index: 10;
+}
+.pDInformation p{
+    line-height: 30px;
+}
+.nowAsk{
+    position: relative;
+}
+/*联系方式弹出框*/
+.contact{
+    display: none;
+    min-width: 190px;
+    position: absolute;
+    background: white;
+    z-index: 100;
+    top:-85px;
+    left: -33%;
+    padding:10px;
+    box-shadow: 0 0 5px #bababa;
+}
+.contact p{
+    padding:0;
+    line-height: 25px;
+}
+.contact em{
+    min-width: 100px;
+    max-width: 120px;
+    vertical-align: top;
+}
+.contact img{
+    width: 15px;
+    height: 15px;
+    margin:0;
+    position: absolute;
+    top:3px;
+    right: 3px;
+    border:none;
+}
+/*选中*/
+.chooseThis{
+    background: #dc2827;
+    border-color: #dc2827;
+    color:white;
+}
+

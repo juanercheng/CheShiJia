@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="screen-orientation" content="portrait"><!--强制竖屏-->
+<meta name="format-detection" content="telephone=no"><!-- 禁用自动识别电话号码 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>我的订单</title>
+
+<link href="css/common.css" rel="stylesheet">
+<link href="css/flexslider.css" rel="stylesheet">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link href="layer/skin/layer.css" rel="stylesheet"><!--弹框css-->
+<link href="css/my_order.css" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <div class="personalCenter">
+    	<a href="main_personal_center_home.html">个人中心
+    		<b style="margin: 0 10px;">></b>
+    	</a>
+		<a href="my_order.html">我的订单</a>
+    </div>   
+     <div class="pesonalCenterHome">
+          <div class="pesonalCenterHomeL"></div>
+          <div class="pesonalCenterHomeR">
+              <div class="myOrder">
+                  <!--<h1>我的订单</h1>
+                  <p class="lineRed"></p>-->
+                    <div class="myOrderClassify">
+                        <span class="selectedCss">全部</span>
+                        <span>已完成</span>
+                        <span>未完成</span>
+                    </div>
+                  <div class="box">
+		                      <div class="nav">
+		                      	<div style="margin:15px 0px; margin-left: 495px; float: left;">实付</div>
+		                      	<div style="margin:15px 0px; margin-left: 60px; float: left;">数量</div>
+		                      	<div style="float: left; margin:15px 0px;margin-left:60px;">状态</div>
+		                      	<div style="float: left;margin:15px 0px;margin-left: 106px;">操作</div>
+		                      </div>
+		                      <ul class="orderStatus  orderAll"></ul>
+		              <ul class="orderStatus finished" style="display: none"></ul>        
+                      <ul class="orderStatus unfinished" style="display: none"></ul>
+                      <!--start jumpPage-->
+                      <div class="jumpPage"></div>
+                  </div>
+                  <!--end jumpPage-->
+             </div>
+         </div>
+     </div>
+    <footer></footer>
+</body>
+<script src="js/common/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!--弹框插件-->
+<script src="layer/layer.js" type="text/javascript"></script>
+<script src="js/frame/frame.js" type="text/javascript"></script><!--该页面中有用到公共组件，控件需要引用-->
+<script src="js/common/common.js" type="text/javascript"></script><!--每个页面必须引用，公共view js的入口-->
+<script src="js/common/swiper.min.js" type="text/javascript"></script>
+<script src="js/common/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/common/laypage.js" type="text/javascript"></script>
+</html>
+<script>
+    $(function(){
+        //order (3)
+        order(4)
+        var type;
+         //alert(type)
+        $('.myOrderClassify span').click(function () {
+            $(this).addClass('selectedCss').siblings('span').removeClass('selectedCss');
+            $('.orderStatus').eq($(this).index()).show().siblings('.orderStatus').hide();       
+			if($(this).index()==0){
+				type = 4;
+			}else if($(this).index()==1){
+				type = 3;
+			}else if($(this).index()==2){
+				type = 2;
+			} 
+            order(type)
+        });
+
+    });
+    function order (type){
+        $.ajax({
+            type: "POST", //提交方式
+                url:  root_path + "payment/getTradeList", //绝对路径
+            data: {
+            	token: sessionStorage.getItem('token'),
+
+           	    type: type,
+            }, //数据，这里使用的是Json格式进行传输
+            dataType: 'json',
+            success: function (Response) { 
+                if (Response.rspCode == "0000") {
+                    console.log(Response)
+                    var LiContent3;
+                    for (var i = 0; i < Response.data.tradeList.length; i++) {
+                        var data = Response.data.tradeList[i];
+                        //console.log(i)
+                        paging ();
+                    }
+                    //当列表数据为空的时候分页隐藏；
+                    var list_num = Response.data.tradeList.length;
+                    if(list_num==0){
+                        $(".jumpPage").hide();
+                    }else{
+                        $(".jumpPage").show();
+                    }
+                    function paging (){
+                        var data = Response.data.tradeList;
+                        var aa = Response.data.page.total;
+                        var nums = 5; //每页出现的数量
+                        var pages = Math.ceil(aa / nums);
+                        var thisDate = function (curr) {
+                            var str = '',
+                            	last = curr * nums - 1;
+                            	
+                            if (last >= data.length) {
+                                last = data.length - 1;
+                            } else {
+                                last = last
+                            };
+                            for (var i = (curr * nums - nums); i <= last; i++) {
+                                if(type==2){
+                                    //判断状态   1:未付款,2:待收货,3:付款失败（不显示）,4:已确认收货未评价,5:已评价
+                                    var temp= data[i].status;
+                                    var strb;
+                                    var b , c ,d,e;
+                                    if( temp==1){
+                                        strb="未完成";
+                                        b="none";
+                                        c="block";
+                                        d="none";
+                                    }else if(temp==2){
+                                        strb="未完成";
+                                        b="none";
+                                        c="block";
+                                        d="none";
+                                    }
+	                                	  str += '<li uid="' + data[i].id + '">'
+                                                 +  '<div class="clearfix">'
+                                                 +  '<div class="carImg pull-left">'
+                                                 +  '<img  src="'+data[i].detail.img+'">'
+                                                 +  '</div>'
+                                                 +  '<div class="describeR pull-left">'
+                                                 +  '<p>'+data[i].detail.name+'</p>'
+                                                 +  '<h6 class="orderNumber">订单编号：'+data[i].id+'</h6>'
+                                                 +  '</div>'
+                                                 +  '<div>'
+                                                 +  '<p class="pocket">'+data[i].detail.price+'元</p>'
+                                                 +  '<p class="number">'+data[i].detail.num+'</p>'
+					                             +  '<p class="unfinished1">'+strb+'</p>'
+                                                 +  '<div class="caozuo">'
+                                                 +  '<p class="appraise delivery continue " style="display: '+c+';" >确认收货</p>'
+                                                 +  '<p class="appraise delivery sureResive " style="display: '+d+';" id="'+data[i].detail.marketid+' " type="'+data[i].detail.id+'">确认收货</p>'
+					                             +  '</div>'
+                                                 +  '</div>'
+                                                 +  '</div>'
+					                          +'</li>'   
+                                }else if(type==3){
+                                    var temp= data[i].status;
+                                    var strb;
+                                    var b , c ,d,e;
+                                    if( temp==4){
+                                        strb="已完成";
+                                        b="block";
+                                        c="none";
+                                        d="none";
+                                        e=4
+                                    }
+                                    else if(temp==5){
+                                        strb="已完成";
+                                        b="block";
+                                        c="none";
+                                        d="none";
+                                        e=5
+                                    };
+                                    str += '<li uid="' + data[i].id + '">'
+                                            +  '<div class="clearfix">'
+                                            +  '<div class="carImg pull-left">'
+                                            +  '<img  src="'+data[i].detail.img+'">'
+                                            +  '</div>'
+                                            +  '<div class="describeR pull-left">'
+                                            +  '<p>'+data[i].detail.name+'</p>'
+                                            +  '<h6 class="orderNumber">订单编号：'+data[i].id+'</h6>'
+                                            +  '</div>'
+                                            +'<div>'
+                                            +  '<p class="pocket">'+data[i].detail.price+'元</p>'
+					                        +  '<p class="number">'+data[i].detail.num+'</p>'
+					                        +   '<p class="over'+data[i].status+'">已完成</p>'
+					                        +   '<div class="caozuo">'
+					                        +  '<p class="lookOver delete" uid="' + data[i].id + '">删除订单</p>'
+                                            +  '<p class="pingjia   appraise evaluate evaluate pj'+e+' "   uid="' + data[i].id + '">评价</p>'
+                                            +   '</div>'
+                                            +'</div>'
+					                        +'</li>'
+
+
+
+                                }else if(type==4){
+                                	//console.log(data[i].detail.id)
+                                	//判断状态   1:未付款,2:待收货,3:付款失败（不显示）,4:已确认收货未评价,5:已评价
+                                    var temp= data[i].status;
+                                	var strb;
+                                	var a,b , c ,d,e,f;
+                                	if( temp==1){
+                                		strb="未完成";
+                                		b="none";
+                                		c="block";
+                                        d="none";
+                                        e="none";
+                                        a="block"
+                                	}else if(temp==2){
+                                        strb="未完成";
+                                        a="none"
+                                        b="none";
+                                        c="block";
+                                        d="none";
+                                        e="none"
+                                    }else  if( temp==4){
+                                        strb="已完成";
+                                        a="none"
+                                        b="block";
+                                        c="none";
+                                        d="none";
+                                        e="block";
+                                        f=4
+                                    }
+                                	else if(temp==5){
+                                		strb="已完成";
+                                        a="none"
+                                		b="block";
+                                		c="none";
+                                		d="none";
+                                        e="none";
+                                        f=5
+                                    };
+                                    str += '<li uid="' + data[i].id + '">'
+                                        +  '<div class="clearfix pull-left">'
+                                        +  '<div class="carImg pull-left">'
+                                        +  '<img  src="'+data[i].detail.img+'">'
+                                        +  '</div>'
+                                        +  '<div class="describeR pull-left">'
+                                        +      '<p>'+data[i].detail.name+'</p>'
+                                        +      '<h6 class="orderNumber">订单编号：'+data[i].id+'</h6>'
+                                        +  '</div>'
+                                        +  '<div>'
+                                        +  '<p class="pocket">'+data[i].detail.price+'元</p>'
+                                        +  '<p class="number">'+data[i].detail.num+'</p>'
+                                        +   '<p class="over'+data[i].status+'">'+strb+'</p>'
+                                        +   '<div class="caozuo">'
+//                                        +  '<p class="lookOver continue" style="display: '+a+';" uid="' + data[i].id + '">继续支付</p>'
+                                        +  '<p class="lookOver delete" style="display: '+b+';" uid="' + data[i].id + '">删除订单</p>'
+                                        +  '<p class="appraise evaluate evaluate'+f+'" style="display: '+b+';"   uid="' + data[i].id + '">评价</p>'
+                                        +  '<p class="appraise delivery continue " style="display: '+c+';" >确认收货</p>'
+                                        +  '<p class="appraise delivery sureResive " style="display: '+d+';" id="'+data[i].detail.marketid+' " type="'+data[i].detail.id+'">确认收货</p>'
+                                        +   '</div>'
+                                        +  '</div>'
+                                        +  '</div>'
+                                        +'</li>'
+
+
+                                }
+                            }
+                            return str;
+                        };
+                        //调用分页
+                        laypage({
+                            cont: $('.jumpPage'), //容器。值支持id名、原生dom对象，jquery对象,
+                            pages: pages, //总页数
+                            skip: true, //是否开启跳页
+                            skin: '#e44523',
+                            groups: 5,
+                            first: 1, //将首页显示为数字1,。若不显示，设置false即可
+							last: pages, //将尾页显示为总页数。若不显示，设置false即可
+							prev: '<', //若不显示，设置false即可
+                            next: '>', //若不显示，设置false即可
+                            jump: function (obj, first) {
+                                    if(type==3){
+                                        $('.finished').html(thisDate(obj.curr));
+                                        _click()
+                                    }
+                                    if(type==2){
+                                        $('.unfinished').html(thisDate(obj.curr));
+                                        _click()
+                                    }
+                                    if(type==4){
+                                        $('.orderAll').html(thisDate(obj.curr));
+                                        _click()
+                                    }
+                            }//连续显示分页数
+                        });
+                    }
+                    function _click(){
+                        //点击查看按钮跳转至订单详情页面；
+                        $('.orderStatus li img').click(function () {
+                            var uid = $(this).parent().attr('uid');
+                            window.location.href = "the_order_details.html?id=" + uid;
+                        });
+                        //点击评价按钮跳转至评价页面；
+                        $('.evaluate4').click(function () {
+                            var uid = $(this).attr('uid');
+                            window.location.href = "comment.html?id=" + uid;
+                        });
+                        //点击已完成订单的删除按钮删除整个订单；
+                        $(".delete").click(function () {
+                            var _this = $(this);
+                            var uid = $(this).parent().parent().parent().parent().attr('uid');
+                            layer.confirm('你确定要删除吗?', function(index){
+                            //删除资源
+                            $.ajax({
+                                type: "POST", //提交方式
+                                url:  root_path + "payment/delTrade", //绝对路径
+                                data: {
+                                	token: sessionStorage.getItem('token'),
+                                	id: uid,
+                                }, //数据，这里使用的是Json格式进行传输
+                                dataType: 'json',
+                                success: function (Response) {
+                                    if (Response.rspCode == "0000") {
+                                        _this.parent().parent().parent().parent().remove();
+                                    } else {
+                                        layer.alert(Response.rspDesc);
+                                    }
+                                },
+                                error: function() {
+                                    layer.alert("服务器异常，请稍后处理！");
+                                }
+                            });
+                            layer.close(index);
+                            })
+                           
+                        });
+                        //点击确认收货按钮；
+                        $('.sureResive').click(function () {
+                            var uid = $(this).parent().parent().attr('uid');
+//                            console.log(uid);
+                            var _this = $(this);
+                            $.ajax({
+                                type: "POST", //提交方式
+                                url:  root_path + "payment/confirmTrade", //绝对路径
+                                data: {
+                                	token: sessionStorage.getItem('token'),
+	                                id:uid,
+	                                
+                                }, //数据，这里使用的是Json格式进行传输
+                                dataType: 'json',
+                                success: function (Response) {
+                                	//alert(1)
+                                    if (Response.rspCode == "0000") {
+//                                        console.log(Response.rspCode);
+                                        layer.alert("确认收货成功！");
+                                        console.log(_this.parent().parent().parent().attr("class"))
+                                        if(_this.parent().parent().parent().attr("class")=="orderStatus unfinished"){
+                                            _this.parent().parent().remove();
+                                        }else{
+                                        	
+                                          // _this.parent().html("<button class='delete'>删除订单</button><button class='evaluate' uid=" + uid + ">评价</button>");
+                                        _this.parent().html("<p class='lookOver delete'>删除订单</p><p class='appraise evaluate'>评价</p>")
+					                    paging ()  
+                                            
+                                        }
+                                    } else {
+                                        layer.alert(Response.rspDesc);
+                                    }
+                                },
+                                error: function() {
+                                    layer.alert("服务器异常，请稍后处理！");
+                                }
+                            });
+                        });
+                        //点击继续支付跳转页面：
+                        $(".continue").click(function () {
+                            var uid = $(this).parent().parent().attr('uid');
+                            var id = $(this).attr('id');
+                            layer.alert("该订单还没有支付，请支付完成之后确认收货！")
+//                            window.location.href = "pay_card.html?id="+id+"&payType="+payType+"&orderId="+uid;
+                        });
+                    }
+                }else{
+                		$(".box").hide();
+						 layer.alert(Response.rspDesc);
+                }
+            },
+            error: function() {
+                layer.alert("服务器异常，请稍后处理！");
+            }
+        })
+    }
+</script>

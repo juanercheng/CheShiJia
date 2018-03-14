@@ -1,0 +1,325 @@
+@charset "utf-8";
+/* CSS Document */
+
+.carInformation {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+
+}
+.carInformation~.carInformation{
+    margin-top: 45px;
+}
+.carInformation h1 {
+    text-align: left;
+    font-size: 22px;
+    color: #111;
+    margin: 15px 0px;
+    border-left: 5px solid #c43027;
+    padding-left: 10px;
+}
+
+.carInformation a {
+    color: #c43027;
+    font-size: 18px;
+    float: right;
+    margin-top: 10px;
+}
+
+.lineRed {
+    height: 2px;
+    background: #c43027;
+}
+
+.carInformation ul {
+    padding-left: 20px;
+    margin-top: 20px;
+    background-color: white;
+}
+.carInformation li {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.carInformation li img {
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+.carInformation .describeR {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.describeR p {
+    font-size: 16px;
+    color: #666;
+    line-height: 25px;
+}
+
+.describeR p:first-child {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.describeR p:nth-child(2) {
+    font-size: 22px;
+    color: #c43027;
+}
+
+.describeR em {
+    font-size: 16px;
+}
+
+.carImg {
+    height: 130px;
+    width: 130px;
+}
+
+.carInformation li:nth-child(2n) {
+    height: 1px;
+    background: #e4e4e4;
+    padding: 0;
+    margin: 0;
+}
+
+.navigationBarUl li:nth-child(5) {
+    /*background: #c43027 !important;*/
+    border:2px solid #f2f1f1;
+    border-bottom:3px solid #cc1612;
+}
+
+.myOrder .describeR p span {
+    font-size: 16px;
+    color: #666;
+}
+
+.myOrder .describeR p:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.myOrder li button, .fourList li button {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #c43027;
+    border-radius: 5px;
+    line-height: 40px;
+    color: #c43027;
+    float: right;
+    background: none;
+    margin-top: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/*我的订单限定高度，只显示3个订单*/
+/*.carBox {
+    max-height: 526px;
+    overflow-y: hidden;
+}*/
+
+.carBoxOne {
+    
+    overflow-y: hidden;
+}
+
+.carBoxTwo {
+   
+    overflow-y: hidden;
+}
+
+.carBoxThree {
+    max-height: 703px;
+    overflow-y: hidden;
+}
+
+/*--------------carInformation_two------------------*/
+.carInforTwoPage img {
+    margin-bottom: -5px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.carInforTwoPage .describeR p:nth-child(2) {
+    font-size: 14px;
+    color: #999;
+}
+
+.carInforTwoPage ul label.checked {
+    display: inline-block;
+    background-position: -27px 0px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.carInforTwoPage ul .compile {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #c43027;
+    border-radius: 5px;
+    color: #c43027;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+}
+
+.compile {
+    margin-right: 20px;
+}
+
+.threeList .describeR p:nth-child(3), .threeList .describeR p:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.compile {
+    cursor: default;
+}
+
+
+/****实现导航根据右侧内容高度动态变化****/
+.pesonalCenterHome{
+    position: relative;
+}
+.pesonalCenterHomeL{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.pesonalCenterHomeR{
+    margin-left: 250px;
+}
+/****end 实现导航根据右侧内容高度动态变化****/
+
+/*个人中心*/
+.personalCenter{
+	width: 1190px;
+	height: 58px;
+	margin: 2px auto;
+	font-size: 15px;
+	line-height: 58px;
+	background: #fff;
+	-webkit-box-shadow: 0 5px 10px #b2b2b2; 
+	-moz-box-shadow: 0 5px 10px #b2b2b2;
+	box-shadow: 0 5px 10px #b2b2b2;
+	padding-left: 10px;
+	
+}
+.pesonalCenterHomeR .myOrder{
+	width: 100%;
+	margin-bottom: 60px;
+}
+.pesonalCenterHomeR .myOrder p{
+	height: 60px;
+	position: relative;
+}
+.pesonalCenterHomeR .myOrder a{
+	display: block;
+}
+.pesonalCenterHomeR .myOrder .Left{
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	color: #000;
+	padding-bottom: 6px;
+}
+.myOrder .titleLine {
+	display: block;
+    height: 3px;
+    width: 45px;
+    background: #dc2826;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+   
+}
+
+.pesonalCenterHomeR .myOrder .Right{
+	font-size: 16px;
+	float: right;
+	color: #fff;
+	background:#e64d23;
+	width: 119px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	
+}
+.pesonalCenterHomeR .myOrder .myOrder-LIST{
+	width: 100%;
+	border: 1px solid #e4e4e4;
+}
+.myOrder .myOrder-LIST .LIST-LI{
+	padding: 17px 20px 17px 15px;
+	height: 100px;
+	border-bottom: 1px solid #E4E4E4;
+}
+
+.LIST-LI .Img{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #e4e4e4;
+	float: left;
+}
+.LIST-LI .Img img{
+	width: 100%;
+	height: 100%;
+}
+
+.LIST-LI .Information{
+	width: 655PX;
+	height: 100px;
+	float: left;
+	margin-left: 20PX;
+}
+.LIST-LI .Information h2{
+	margin: 10px 0px;
+	font-weight: bold;
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*white-space: nowrap*/
+}
+.LIST-LI .Information i{
+	font-style: normal;
+	font-weight: bold;
+	color: #e64d23;
+	font-size: 16px;
+}
+.LIST-LI .Information h5{
+	margin: 10px 0;
+}
+.LIST-LI .Check{
+	width: 80PX;
+	height: 100px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+	line-height: 100px;
+	text-align: center;
+	overflow: hidden;
+	
+	
+}
+.LIST-LI .Check a{
+	color: #5093dd;
+}
+.LIST-LI .Check b{
+	font-style: normal;
+	font-weight: bold;
+	color: #e64d23;
+	font-size: 16px;
+}
+
+
+
+
+
+
+
+
+

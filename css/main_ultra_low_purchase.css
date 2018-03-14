@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+.lowPurchase {
+    width: 1200px;
+    margin: auto;
+    background: white;
+    box-shadow:0 5px 10px #e6e6e6;
+}
+
+.nBList:nth-child(2) {
+    border:2px solid #f2f1f1;
+    border-bottom:3px solid #cc1612;
+}
+
+/*============filtrate==============*/
+.filtrate {
+    border-bottom: 1px solid #e4e4e4;
+    width: 1200px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.trademark p, .cars p, .carModels p {
+    width: 995px;
+    display: inline-block;
+    padding: 8px 0;
+}
+
+.showImg {
+    margin-top: 25px
+}
+
+.hideImg {
+    margin-top: -54px;
+}
+
+.trademark img {
+    float: right;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+.filtrate span {
+    font-size: 16px;
+}
+
+.condition {
+    font-size: 16px;
+    color: #111;
+    font-weight: 600;
+}
+.condition{
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+ .trademarkText span, .carsText span, .twoWayTitle span, .carModels em,.nameList span {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.carModelsText span {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 14px;
+}
+
+.addUnlimitedCss {
+    color: #fff;
+    background: #c43027;
+}
+
+.trademarkText, .carModelsText, .carsText, .twoWayTitle {
+    text-align: left;
+    vertical-align: top;
+    width: 1000px;
+}
+
+.addSpanCss {
+    color: #fff;
+    background: #c43027;
+}
+
+.result {
+    padding:0 25px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: left;
+    height: 66px;
+    line-height: 66px;
+}
+
+.result > span:first-child {
+    font-size: 20px;
+    margin-top: 0px;
+    float: left;
+    cursor: auto;
+}
+
+.result .carName  {
+    float: left;
+    height: 30px;
+    margin-top: 17px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.result .carName span{
+    padding:0 10px;
+    height: 100%;
+    display: inline-block;
+    border:1px solid #d9d9d9;
+    background: white;
+    border-radius: 5px ;
+    margin-right: 10px;
+}
+
+.result button {
+    height: 66px;
+    color: #000;
+    font-size: 18px;
+    margin-left: 15px;
+    background: none;
+    cursor: pointer;
+    float: left;
+}
+
+.result > span:last-child {
+    font-size: 18px;
+    color: #999;
+    margin-left: 30px;
+    height: 66px;
+    float: left;
+    cursor: auto;
+}
+
+.trademarkLeft, .carsLeft, .carModelsLeft {
+    display: inline-block;
+    float: left;
+    margin-top: 8px;
+}
+
+.addcsstradema {
+    height: 30px;
+    overflow-y: hidden;
+}
+
+.carModelsText {
+    margin-top: 5px;
+}
+
+.carModelsText span {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.downBox {
+    display: none;
+}
+
+.hideImg {
+    display: none;
+}
+
+.clickDown {
+    cursor: pointer;
+}
+
+/*----按字母筛选--------*/
+.twoWayTitle span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    padding: 0;
+}
+
+.line {
+    height: 1px;
+    border-top: 1px dashed #dadada;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.twoWay {
+    margin-left: -43px;
+}
+
+.twoWayCss {
+    background: #f25854;
+    color: #fff;
+}
+
+/*===========sectionTwo===============*/
+.recommendT,.CarMarket,.CarMarket1 {
+    background: white;
+    padding:50px 0;
+    padding-left: 10px;
+}
+.recommendT li,.CarMarket li,.CarMarket1 li{
+    float: left;
+    margin:15px 5px;
+}
+.list_no{
+    width: 1200px;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+    font-size: 24px;
+    display: none;
+}
+.recommendT .shopInfo ,.recommendT .priceInfo,.CarMarket .priceInfo{
+    cursor: pointer;
+}
+
+/*==============分页===============*/
+.jumpPage {
+    padding-bottom:100px;
+    height: 30px;
+    text-align: right;
+    color: #666;
+}
+.jumpPage .laypage_main *{
+    font-size:16px;
+}
+.jumpPage .laypageskin_molv a{
+    border:1px solid #a6a6a6;
+}
+.jumpPage .laypage_main input{
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+
+
+
+
+
+
+
+

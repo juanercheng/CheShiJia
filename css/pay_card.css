@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* CSS Document */
+.nBList:nth-child(2) {
+    border: 2px solid #f2f1f1;
+    border-bottom: 3px solid #cc1612;
+}
+
+.payMethod {
+    width: 1200px;
+    margin: auto;
+    border: 1px solid #e4e4e4;
+    margin-top: 1px;
+    box-shadow: 0 5px 10px #b2b2b2;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background: white;
+}
+
+/*顶部信息导航*/
+.detailTitle {
+    padding: 20px 0;
+}
+.detailTitle span {
+    margin: 0 5px;
+    font-size: 16px;
+}
+.detailTitle span:nth-of-type(2), .detailTitle span:nth-of-type(4), .detailTitle span:nth-of-type(6) {
+    width: 8px;
+    height: 12px;
+    background: url("../imgs/page.png") -20px 0 no-repeat;
+    background-size: cover;
+}
+/*订单信息提示*/
+.orderInfo{
+    padding:20px 0;
+    font-size: 16px;
+    line-height: 25px;
+}
+.orderInfo p:nth-of-type(1){
+    font-weight: bold;
+}
+.orderInfo span:nth-last-of-type(1){
+    float: right;
+}
+.orderInfo p:nth-of-type(2) em{
+    color: #ec0202;
+    padding:0 5px;
+}
+/*底部返回提示*/
+.backBtm{
+    margin-bottom:50px;
+    text-align: right;
+    font-size:16px;
+}
+.backBtm a{
+    cursor: pointer;
+}
+.backBtm a:nth-of-type(2){
+    color: #565656;
+}
+.backBtm span{
+    width: 1px;
+    height: 15px;
+    background: #a5a5a5;
+    margin:0 15px;
+    vertical-align: middle;
+}
+/*显示窗口*/
+.show{
+    width: 1100px;
+    padding:20px;
+    margin:30px auto;
+    box-shadow: 0 0px 15px #b2b2b2;
+}
+
+/*标题*/
+.recommend_top {
+    position: relative;
+    margin-bottom: 25px;
+}
+.recommend_top .titleText {
+    font-size: 16px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+.recommend_top .titleLine {
+    height: 3px;
+    width: 45px;
+    background: #d92400;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/*银联支付*/
+.unionPay{
+    height: 560px;
+}
+.payBtm p {
+    padding: 0 25px;
+    font-size: 16px;
+}
+
+.payBtm p span {
+    padding: 8px 15px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.payBtm p em {
+    height: 20px;
+    width: 1px;
+    background: #b3b3b3;
+    margin: 0 10px;
+    margin-top: 6px;
+}
+.payCard{
+    font-size:16px;
+    width:350px;
+    margin:0 auto;
+}
+.payCard{
+    margin-top:60px;
+    margin-bottom:90px;
+}
+.payCard button{
+    width: 100%;
+    line-height: 48px;
+    height: 48px;
+    color: white;
+    background:linear-gradient(to right, #e64f23, #db2427);
+    cursor: pointer;
+}
+.payCard button::before{
+    width: 19px;
+    height: 19px;
+    background: url("../imgs/addcard.png") no-repeat;
+    content:'';
+    display: inline-block;
+    margin-right:10px;
+    vertical-align: sub;
+}
+.payCard > span{
+    margin:80px 0 20px;
+    font-weight:bold;
+}
+.payCard p{
+    padding:10px;
+    border:1px solid #b3b3b3;
+    margin-bottom: 10px;
+}
+.payCard p img{
+    vertical-align: middle;
+}
+.payCard p span{
+    float: right;
+    line-height: 38px;
+}
+
+/*微信支付  支付宝支付*/
+.wechatimg{
+    text-align: center;
+    height: 416px;
+}
+.wechatimg div{
+    float: left;
+    margin-left: 150px;
+}
+.wechatimg div:nth-of-type(1){
+    margin-top: 65px;
+}
+.wechatimg div:nth-of-type(1) span{
+    display: block;
+    margin:20px 0;
+}
+
+/*新卡支付*/
+.addcardInfo{
+    height: 504px;
+    font-size:16px;
+}
+.addcardInfo img{
+    vertical-align: middle;
+}
+.addcardInfo p{
+    padding-left:200px;
+    margin-bottom: 20px;
+}
+.addcardInfo p span{
+    width:150px;
+    text-align: right;
+    margin-right: 30px;
+    vertical-align: sub;
+}
+.addcardInfo p input{
+    width: 320px;
+    border:1px solid #e4e4e4;
+    padding:10px 20px;
+}
+.addcardInfo .getCode{
+    color: #dc2827;
+    padding:12px 20px;
+    background: white;
+    border:1px solid #dc2827;
+    vertical-align: top;
+    margin-left: 5px;
+}
+.addcardInfo .getCode:hover{
+    color: white;
+    background: #dc2827;
+}
+.addcardInfo div{
+    padding-left: 410px;
+    height: 40px;
+    line-height:40px;
+    position: relative;
+}
+.addcardInfo div em{
+    color: #dc2827;
+    margin-left: 5px;
+}
+.dredge{
+    margin-left: 385px;
+    margin-top:30px;
+    padding:15px 35px;
+    background:linear-gradient(to right, #e64f23, #db2427);
+    color: white;
+}
+.addcardInfo div input{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top:12px;
+    left: 385px;
+    opacity: 0;
+    z-index: 10;
+}
+/*复选框*/
+.check_one {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("../imgs/before.png") no-repeat;
+    position: absolute;
+    top: 12px;
+    left: 385px;
+}
+.addcardInfo div input:checked + .check_one{
+    background: url("../imgs/after.png") no-repeat;
+}
+.unionpayaGreement:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.unionpayaGreement {
+    text-decoration: underline;
+    color: #ec0202;
+
+}
+.wx{
+
+    render   : "canvas";
+    width       : 256px;
+    height      : 256px;
+    typeNumber  : -1;
+    /*correctLevel    : QRErrorCorrectLevel.H;*/
+    background      : white;
+    foreground      : "#000000" ;
+}
+.detailTitle span:hover{
+    cursor: pointer;
+
+}
+.payTime{
+    /*font-size: 15px;*/
+    font-weight: bold;
+
+}
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="screen-orientation" content="portrait">
+    <!--强制竖屏-->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 禁用自动识别电话号码 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>商家认证</title>
+
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="layer/skin/layer.css" rel="stylesheet"><!--弹框css-->
+    <link href="css/authentication.css" rel="stylesheet">
+</head>
+
+<body>
+<header></header>
+<div class="pesonalCenterHome">
+    <div class="detailTitle">
+        <span>发布车源</span>
+        <span></span>
+        <span>身份认证</span>
+    </div>
+    <div class="pesonalCenter">
+
+            <div class="merchantsCertificationFile">
+                <div class="recommend_top">
+                    <span class="titleText">上传照片</span>
+                    <span class="titleLine"></span>
+                </div>
+                <div class="imgImport">
+                    <form id="frmCarId" enctype="multipart/form-data" method="post">
+                        <div class="img_box">
+                            <span>身份证正面</span>
+                            <div class="approveBoxOne">
+                                <input name="type" type="text" />
+                                <input id="carIdImg" name="imageFile" type="file"/>
+                                <img class="carIdBtn" src="imgs/camer.png"/>
+                            </div>
+                            <span>示例</span>
+                            <div class="approveBoxOne1">
+                                <img class="carIdBtn1" src="imgs/idzheng-6.png"/>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form id="car_reverse">
+                        <div class="img_box">
+                            <span>身份证反面</span>
+                            <div class="approveBoxOne">
+                                <input name="type" type="text" />
+                                <input id="carIdImgT" name="imageFile" type="file"/>
+                                <img class="carIdBtnT" src="imgs/camer.png"/>
+                            </div>
+                            <span>示例</span>
+                            <div class="approveBoxOne1">
+                                <img class="carIdBtnT1" src="imgs/idfan.png"/>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="business_license">
+                        <div class="img_box">
+                            <span>营业执照</span>
+                            <div class="approveBoxOne">
+                                <input name="type" type="text" />
+                                <input id="fileImg" name="imageFile" type="file"/>
+                                <img class="addImgClick" src="imgs/camer.png"/>
+                            </div>
+                            <span >示例</span>
+                            <div class="approveBoxOne1">
+
+                                <img class="addImgClick" src="imgs/zhizhao.png"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="btn_box">
+                <button class="personBtn">提交认证</button>
+            </div>
+    </div>
+</div>
+<footer></footer>
+
+
+</body>
+<script src="js/common/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!--弹框插件-->
+<script src="layer/layer.js" type="text/javascript"></script>
+<script src="js/frame/frame.js" type="text/javascript"></script>
+<!--该页面中有用到公共组件，控件需要引用-->
+<script src="js/common/common.js" type="text/javascript"></script>
+<!--每个页面必须引用，公共view js的入口-->
+<script src="js/common/swiper.min.js" type="text/javascript"></script>
+<script src="js/common/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/common/jquery-form.js" type="text/javascript"></script>
+<script src="js/view/authentication.js" type="text/javascript"></script>
+</html>

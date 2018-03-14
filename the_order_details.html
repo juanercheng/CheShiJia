@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="screen-orientation" content="portrait">
+    <!--强制竖屏-->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 禁用自动识别电话号码 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>订单详情</title>
+
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="layer/skin/layer.css" rel="stylesheet"><!--弹框css-->
+    <link href="css/the_order_details.css" rel="stylesheet">
+</head>
+
+<body>
+<header></header>
+<div class="personalCenter">
+		<a href="main_personal_center_home.html">个人中心<b style="margin: 0 10px;">></b></a>
+		<a href="my_order.html">我的订单</a><b style="margin: 0 10px;">></b>
+		<a href="my_order.html">订单详情</a>
+</div>
+<div class="pesonalCenterHome">
+    <div class="pesonalCenterHomeL">
+        <div class="personalCertificate">
+            <a href="personal_information.html"><img src="imgs/personal_certificate_img.png"/></a>
+            <p><a href="personal_information.html"></a></p>
+            <p class="approveText">
+                <span class="approveNo"></span><a href="merchants_certification.html">未认证</a>
+            </p>
+        </div>
+        <ul>
+            <li class="orderList"><a href="car_information.html"><em></em>售车信息</a></li>
+            <li class="orderList selectCss"><a href="my_order.html"><em class="iconTwo"></em>我的订单</a></li>
+            <li class="orderList"><a href="car_information_two.html"><em></em>我的寻车</a></li>
+            <li class="orderList"><a href="personal_home_my_options.html"><em></em>我的车源</a></li>
+            <li class="orderList"><a href="account_and_security.html"><em></em>账号与安全</a></li>
+        </ul>
+    </div>
+    <div class="pesonalCenterHomeR">
+        <div class="myOrder">
+            <!--<h1>订单详情</h1>
+
+            <p class="lineRed"></p>-->
+			<!--<未完成详情样式>-->
+            <!--<div class="orderBox" >
+            	    <p>订单编号：<span>" + data.id + "</span></p>
+                    <p>付款时间：<span>" + Year + '-' + Month + '-' + Day + '</span></p>
+                    <p>订单状态：<span class='uState'> +'' + <span></p>
+                    <p>支付定金：<span class="money">￥' + data.totalprice + "</span></p>
+                    <p>收件人：<span>" + data.receiver + '</span></p>
+                    <p>联系电话：<span>' + data.mobile + '</span></p>
+                    <div class="recently">最近订单
+                    	<b class="underline"></b>
+                    </div>
+                    <div class="orderBox order_detail">
+                        <img src=' + data.detailList[0].img + '>
+                    	<div class="orderBoxText">
+	                        <div class="carname">' + data.detailList[0].name + "</div>
+	                        <div class="outofpocket">实付：<b>" + data.detailList[0].pricereal + "</b><em>万</em></div>
+	                        <div>数量：<em>" + data.detailList[0].num + '</em></div>
+                        </div>
+                    </div>
+                 	<button uid=' + data.id + '>确认收货</button>'
+            </div>-->
+           <!--<已完成详情样式>--> 
+       <div class="orderBox" > </div>
+        </div>
+    </div>
+</div>
+<footer></footer>
+</body>
+<script src="js/common/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!--弹框插件-->
+<script src="layer/layer.js" type="text/javascript"></script>
+<script src="js/frame/frame.js" type="text/javascript"></script>
+<!--该页面中有用到公共组件，控件需要引用-->
+<script src="js/common/common.js" type="text/javascript"></script>
+<!--每个页面必须引用，公共view js的入口-->
+<script src="js/common/swiper.min.js" type="text/javascript"></script>
+<script src="js/common/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/view/the_order_details.js" type="text/javascript"></script>
+</html>

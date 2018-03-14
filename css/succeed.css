@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+.succeed {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    box-sizing: border-box;
+    padding: 0 30px;
+    background: white;
+    padding-bottom:140px;
+}
+
+.succeedImg {
+    margin-bottom: 60px;
+}
+
+.succeedImg img {
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.succeedImg p {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.succeedImg button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #d00009;
+    border-radius: 40px;
+    background: none;
+    font-size: 18px;
+    color: #d00009;
+}
+.succeedImg button:hover{
+    background: #d00009;
+    color: white;
+}
+.continueBtn {
+    margin-right: 40px;
+}
+
+.checkBtn {
+    margin-left: 40px;
+}
+/*标题*/
+.recommend_top {
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.recommend_top .titleText {
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.recommend_top .titleLine {
+    height: 3px;
+    width: 45px;
+    background: #d92400;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/*购物清单*/
+.failureCar {
+    padding: 15px;
+    border: 1px solid #e4e4e4;
+    text-align: left;
+}
+
+.failureCar img {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #e4e4e4;
+    float: left;
+    margin-right: 15px;
+}
+
+.failureCarR {
+    font-size: 0;
+    padding: 20px 0;
+}
+
+.failureCarR p:first-child {
+    font-size: 18px;
+    color: #333;
+}
+.failureCarR p:first-child span:nth-of-type(1) {
+    font-size: 20px;
+    float: right;
+    color: #ed0000;
+}
+
+.failureCarR p:nth-of-type(2) {
+    font-size: 16px;
+    color: #656565;
+    margin-top: 15px;
+}
+
+.failureCarR p:nth-of-type(2) span {
+    padding: 0 10px;
+}
+
+.failureCarR p:nth-of-type(2) span:nth-of-type(2) {
+    padding: 0 10px;
+    border-left: 1px solid #b3b3b3;
+    border-right: 1px solid #b3b3b3;
+}
+
+.failureCarR p:nth-of-type(2) span:last-child {
+    padding: 0;
+    float: right;
+    color: #000;
+}

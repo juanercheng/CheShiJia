@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+.carInformation{margin: auto;text-align: center;font-size: 16px;margin-bottom: 45px;}
+.carInformation h1{text-align: left;font-size: 22px;color: #111;margin:15px 0px;border-left: 5px solid #c43027;padding-left: 10px;}
+.carInformation a{color: #c43027;font-size: 18px;float: right;margin-top: 10px;}
+.lineRed{height: 2px; background: #c43027;}
+
+.carInformation ul{padding-left: 20px;margin-bottom: 40px;margin-top: 20px;}
+.carInformation li{padding: 20px 0;text-align: left;}
+.carInformation li img{margin-top: 3px;  margin-right: 20px;}
+.carInformation .describeR{display: inline-block;text-align: left;vertical-align: top;}
+.describeR p{font-size: 16px;color: #666;line-height: 25px;}
+.describeR p:first-child{font-size: 18px;color: #333;margin-bottom: 10px;}
+.describeR p:nth-child(2){font-size: 22px; color: #c43027;}
+.describeR em{font-size: 16px;}
+.carImg{height: 130px;width: 130px;}
+.carInformation li:nth-child(2n){height: 1px;background: #e4e4e4;padding: 0;margin: 0;}
+
+
+
+
+
+
+
+.myOrder .describeR p span{font-size: 16px;color: #666;}
+.myOrder .describeR p:nth-child(2){margin-top: 20px;margin-bottom: 15px;}
+.myOrder li button,.fourList li button{width: 100px;height: 40px;border: 1px solid #c43027;border-radius: 5px;line-height: 40px;color: #c43027;float: right;background: none;margin-top: 70px;margin-right: 20px;}
+
+
+
+
+/*--------------carInformation_two------------------*/
+.carInforTwoPage img{margin-bottom: -5px;height: 60px;width: 60px;border-radius: 50px;}
+
+.carInforTwoPage .describeR p:nth-child(2){font-size: 14px; color: #999;}
+.carInforTwoPage ul label.checked{display: inline-block; background-position: -27px 0px;margin-top:25px;margin-right: 10px;}
+.carInforTwoPage ul .compile{width: 100px;height: 40px;font-size: 18px;border: 1px solid #c43027;border-radius: 5px;color: #c43027;float: right;text-align: center;line-height: 40px;}
+.compile{margin-right: 20px;}
+
+
+.threeList .describeR p:nth-child(3),.threeList .describeR p:nth-child(2){margin-bottom: 10px;}

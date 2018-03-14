@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="screen-orientation" content="portrait"><!--强制竖屏-->
+<meta name="format-detection" content="telephone=no"><!-- 禁用自动识别电话号码 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>评价</title>
+
+<link href="css/common.css" rel="stylesheet">
+<link href="css/flexslider.css" rel="stylesheet">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link href="layer/skin/layer.css" rel="stylesheet"><!--弹框css-->
+<link href="css/comment.css" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <div class="personalCenter">
+		<a href="main_personal_center_home.html">个人中心<b style="margin: 0 10px;">></b>
+		<a href="my_order.html">我的订单<b style="margin: 0 10px;">></b></a>
+		<a href="the_order_details.html">订单详情<b style="margin: 0 10px;">></b></a>
+		<a href="comment.html">评论</a>
+    </div> 
+     
+     
+    <div class="pesonalCenterHome">
+          <div class="pesonalCenterHomeL">
+              <div class="personalCertificate">
+                  <a href="personal_information.html"><img src="imgs/personal_certificate_img.png" /></a>
+                  <p><a href="personal_information.html">韩梅梅</a></p>
+                  <p class="approveText">
+                     <span class="approveNo"></span><a href="merchants_certification.html">未认证</a>
+                  </p>
+              </div>
+              <ul>
+                  <li class="orderList"><a href="car_information.html"><em></em>售车信息</a></li>
+                  <li class="orderList selectCss"><a href="my_order.html"><em class="iconTwo"></em>我的订单</a></li>
+                  <li class="orderList"><a href="car_information_two.html"><em></em>我的寻车</a></li>
+                  <li class="orderList"><a href="personal_home_my_options.html"><em></em>我的资源</a></li>
+                  <li class="orderList"><a href="account_and_security.html"><em></em>账号与安全</a></li>
+              </ul>
+          </div>
+          <div class="pesonalCenterHomeR">
+             <div class="myOrder">
+                <!--<h1>评论</h1>
+                <p class="lineRed"></p>-->
+                 <div class="box">
+                     <ul class="listLi" style="display: block;">
+                         <!--<li>
+                             <img class="carImg" src="imgs/succeed_car.jpg">
+
+                             <div class="describeR">
+                                 <p>奥迪A1 2014款 A1 1.4TFSI 双离合 30TFSI 时尚型(进口)</p>
+
+                                 <p><span>实付：</span>15.23<em>万</em></p>
+
+                                 <p>数量： 2</p>
+                             </div>
+                         </li>-->
+                     </ul>
+                     <p class="checkComment">
+                         <input type="radio" name="sport"/>
+                         <label name="nba1" class="radio checked gonds nba1" for="nba">好评</label>
+                         <input type="radio" name="sport">
+                         <label name="nba2" class="radio Mreview nba2" for="nba">中评</label>
+                         <input type="radio" name="sport">
+                         <label name="nba3" class="radio Ncomment nba3" for="nba">差评</label>
+
+                     </p>
+                     <textarea placeholder="外观霸气,动力不错,操控性能一般,不过相对于这个价位的车来说,性价比还是挺高的!"></textarea>
+                     <button class="commentBtn">提交</button>
+                 </div>
+             </div>
+
+         </div>
+     </div>
+    <footer></footer>
+</body>
+<script src="js/common/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!--弹框插件-->
+<script src="layer/layer.js" type="text/javascript"></script>
+<script src="js/frame/frame.js" type="text/javascript"></script><!--该页面中有用到公共组件，控件需要引用-->
+<script src="js/common/common.js" type="text/javascript"></script><!--每个页面必须引用，公共view js的入口-->
+<script src="js/common/swiper.min.js" type="text/javascript"></script>
+<script src="js/common/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/view/comment.js" type="text/javascript"></script>
+</html>

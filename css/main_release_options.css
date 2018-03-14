@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+/*---------------release_options---------------------*/
+
+.nBList:nth-child(4) {
+    border:2px solid #f2f1f1;
+    border-bottom:3px solid #cc1612;
+}
+
+.releaseOptions {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px 0;
+    background-color: white;
+    box-shadow: 0 5px 10px #e6e6e6;
+    font-size:16px;
+}
+
+.releaseOptions input, textarea {
+    width: 660px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+    padding-left: 10px;
+    color: #999;
+    resize: none;
+    font-size: 16px;
+    padding-right: 40px;
+    margin-left: 3px;
+}
+
+.releaseOptions p {
+    margin-bottom: 20px;
+}
+
+.releaseOptions p > span:nth-of-type(1) {
+    display: inline-block;
+    font-size: 16px;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.intDispalynone span{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+textarea {
+    height: 120px;
+    vertical-align: top;
+}
+
+.confirmReleaseBtn {
+    width: 180px;
+    height: 50px;
+    background: linear-gradient(to right,#e64f23,#db2427);
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.pcticter {
+    height: 88px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.pcticter .pcticterAdd {
+    height: 80px;
+    display: inline-block;
+    text-align: left;
+}
+
+.pageDown {
+    position: relative;
+}
+
+.pageDown em {
+    position: absolute;
+    top: 18px;
+    right: 180px;
+    background: url(../imgs/page_down.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    color: #999;
+}
+
+.pageDown .money {
+    background: none;
+}
+
+.myform {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.addImgClick {
+    margin-left: -83px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+#fileImg {
+    width: 75px;
+    height: 80px;
+    border: none;
+    vertical-align: top;
+    background: url(../imgs/addimg.jpg) no-repeat;
+    padding: 0px;
+}
+
+.copyImg {
+    width: 80px;
+    height: 80px;
+}
+
+/*-----------want_to_find_car------------------*/
+.findCarWant .nBList:nth-child(4) {
+    background: none;
+}
+
+.findCar {
+    border: none;
+}
+
+.pageDown .carStandard, .pageDown .carTime, .pageDown .carColor, pageDown .carStatus {
+    display: inline-block;
+    width: 700px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+    padding-left: 10px;
+    color: #ababab;
+    resize: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    padding-left: 10px;
+}
+.carTime,.carStandard,.carColor{
+    cursor: pointer;
+}
+.releaseOptionsC {
+    position: relative;
+}
+
+.lianjie{
+    cursor:pointer;
+    text-decoration-color: black;
+
+
+}
+.carCssAdd {
+    position: absolute;
+    top: 108px;
+    left: 448px;
+    /*background: #bab9b9;*/
+    display: none;
+    background-color: #f5f5f5;
+    border: 1px solid #e4e4e4;
+}
+.intDispalynColor,.intDispalynTime{
+    max-height:160px;
+    overflow-y: scroll;
+}
+.carCssAdd li {
+    text-align: left;
+    margin: auto;
+    width: 683px;
+    height: 40px;
+    line-height: 40px;
+    /*border: 1px solid #e4e4e4;*/
+    padding-left: 10px;
+    color: #333;
+    resize: none;
+}
+.carCssAdd li:hover{
+    background-color: #c43027;
+    color: white;
+    cursor: pointer;
+}
+.intDispalynTime {
+    top: 232px;
+    left: 324px;
+}
+
+.intDispalynColor {
+    top: 170px;
+    left: 324px;
+}
+.carColor_choose{
+    display: none;
+}
+#carColor_choose{
+    position: absolute;
+    top: 10%;
+    left: 29%;
+    background:#fff;
+    width: 600px;
+    height: 550px;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+
+}
+#carColor_choose h2{
+    text-align: left;
+    padding: 10px ;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+#carColor_choose input{
+    width: 15px;
+    height: 15px;
+}
+#carColor_choose .shuru,#carColor_choose .shuru1{
+    width: 83%;
+    height: 35px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.outColor ul{
+    clear: both;
+    padding-bottom: 20px;
+}
+.outColor ul li{
+    text-align: left;
+    float: left;
+    padding:  10px;
+    margin-bottom: 10px;
+
+}
+.btnBox{
+    width: 100%;
+    border-top: 1px solid #ddd;
+    height: 20px;
+    position: absolute;
+    bottom: 42px;
+}
+.colorBtn{
+    padding: 10px;
+    background: linear-gradient(to right,#e64f23,#db2427);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px ;
+
+}
+.colorBtn1{
+    padding: 10px;
+    background: linear-gradient(to right,#e64f23,#db2427);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px ;
+
+}
+
+/*汽车品牌、规格、车系、车型弹框*/
+.intDispalynone {
+    max-height: 880px;
+    overflow: auto;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    left: -1px;
+    width: 1198px;
+    padding-top: 20px;
+}
+
+.intCheck span {
+    font-weight: 600;
+}
+
+.intCheck em {
+    display: inline-block;
+    padding: 0 13px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.checkAddCss {
+    background: #c43027;
+    color: #fff;
+}
+
+.carStandard i {
+    font-style: normal;
+    color: #ababab;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 30px;
+}
+.carStandard .primary {
+    width: 100%;
+}
+.carTime,.carColor{
+    margin-left: 3px !important;
+}
+.carStandard{
+    margin-left: -2px !important;
+}
+.carStandard .primary {
+    color: #333;
+}
+/*---------------release_options-补充--------------------*/
+.carCssAddT {
+    position: absolute;
+    top: 42px;
+    left: -1px;
+    width: 100%;
+    display: none;
+}
+
+.carCssAddT li {
+    text-align: left;
+    margin: auto;
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+    padding-left: 10px;
+    color: #999;
+    resize: none;
+}
+.intDispalynStatus {
+    top: 227px;
+    left: 449px;
+}
+.AreaOne {
+    top: 289px;
+}
+
+/*---------------release_options- ybj --------------------*/
+.cheXingPeiZhi em {
+    /* 车型配置 */
+    min-width: 108px;
+    width: auto;
+    padding: 0 10px;
+}
+
+/*---------------release_options- ybj --------------------*/
+
+.addImg > img {
+    margin-right: 10px;
+}
+
+
+
+/*选择提车时间和销售区域*/
+.carColor_text{
+    text-align: left !important;
+    width: 85% !important;
+}
+.carTime_text{
+    width: 85% !important;
+    text-align: left !important;
+}
+/*顶部样式改变*/
+.detailTitle{
+    text-align: left;
+    margin-bottom:50px;
+}
+.detailTitle span{
+    margin:0 5px;
+    font-size: 16px;
+}
+.detailTitle span:nth-of-type(1) {
+    margin-left: 10px;
+}
+.detailTitle span:nth-of-type(2),.detailTitle span:nth-of-type(4){
+    width: 8px;
+    height: 12px;
+    background: url("../imgs/page.png") -20px 0 no-repeat;
+    background-size: cover;
+}
+/*提车区域*/
+.getCar{
+    width: 712px;
+    margin: 0 3px;
+    text-align: left;
+    font-size: 0;
+    vertical-align: middle;
+}
+.getCar span{
+    font-size: 16px;
+    border:1px solid #d43712 ;
+    padding:8px 30px;
+    margin-right: 10px;
+    color: #d43712;
+    margin-bottom: 10px;
+}
+/*期望成交价*/
+.expect{
+    margin-bottom:20px;
+}
+.expect > p{
+    width:51%;
+}
+.expect > p span:nth-of-type(2){
+    color: #999;
+}
+.expect .getCar{
+    margin-left: 14%;
+}
+.expect input{
+    margin-left: 14%;
+    margin-top:10px;
+}
+.expect em{
+    top:103px;
+    width:16px;
+    height:16px;
+}
+/*特殊要求*/
+.require{
+    vertical-align: top;
+    margin-top:10px;
+}
+.chooseRequire{
+    background: #d43712;
+    color: white !important;
+}
+.nochooseRequire{
+    background: white;
+    color: #d43712 !important;
+}
+/*备注*/
+.region{
+    margin-top:10px;
+}
+textarea{
+    width: 690px;
+    padding-right: 10px;
+    line-height: 25px;
+    padding-top:5px;
+}
+.release{
+    text-align: right;
+    margin-right: 160px;
+}
+.release a{
+    text-decoration: underline;
+}
+.release a:visited{
+    color: blue;
+}
+.releaseOptionsC .release span:first-child{
+    width:13px;
+    height:18px;
+    background: url(../imgs/light.png) no-repeat;
+    vertical-align: top;
+}
+.personalCenter1:hover{
+    cursor: pointer;
+
+}
+.mySourse:hover{
+    cursor: pointer;
+
+}
+

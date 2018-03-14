@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="screen-orientation" content="portrait">
+    <!--强制竖屏-->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 禁用自动识别电话号码 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>我的资源编辑</title>
+
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="layer/skin/layer.css" rel="stylesheet"><!--弹框css-->
+    <link href="css/car-information-two-want.css" rel="stylesheet">
+</head>
+
+<body>
+<header></header>
+ <div class="personalCenter">
+		<a href="main_personal_center_home.html">个人中心<b style="margin: 0 10px;">></b>
+		<a href="personal_home_my_options.html">我的资源<b style="margin: 0 10px;">></b></a>
+		<a href="personal_home_my_optionswant.html">编辑</a>
+ </div> 
+<div class="pesonalCenterHome">
+    <div class="pesonalCenterHomeL inforTwo">
+    </div>
+    <div class="pesonalCenterHomeR">
+        <div class="myOrder">
+        	<p class="pageDown">
+                <span>车辆信息</span>
+                <span class="carStandard" >
+                    <i class="primary">
+                        <i class="gGB">请选择规格/品牌/车系/车型</i>
+                        <i class="pPB">/品牌</i>
+                        <i class="cXB">/车系</i>
+                        <i class="_cXB">/车型</i>
+                    </i>
+                    <em></em>
+                </span>
+            </p>
+            <p class="pageDown"><span>外观/内饰颜色</span><span class="carColor"><span class="carColor_text">请选择</span><em></em></span></p>
+        	<p class="pageDown"><span>提车时间</span><span class="carTime"><span class="carTime_text">请选择提车时间</span><em></em></span></p>
+            <p class="pageDown"><span>上牌地点</span><input class="registratAddress" placeholder="请输入上牌地点" type="text" /></p>
+        	<p class="pageDown">
+                <span>提车区域</span>
+                <span class="getCar regionArea">
+                	<span id="4">全国</span>
+                	<span id="4">全国</span>
+                	<span id="4">全国</span>
+                </span>
+            </p>
+            <p class="pageDown">
+                <span>车辆状态</span>
+                <span class="getCar carStatus">
+                	<span id="9">现车</span>
+                	<span id="9">现车</span>
+                </span>
+            </p>
+            <div class="pageDown expect">
+                <p>
+                    <span>期望成交价</span>
+                    <span>(不填将显示电议)</span>
+                </p>
+                <span class="getCar">
+                	<span id="2186">优惠点数</span>
+                	<span id="2186">优惠点数</span>
+                	<span id="2186">优惠点数</span>
+                	<span id="2186">优惠点数</span>
+                </span>
+                <input class="priceNum" placeholder="请输入期望成交价格" type="text" onkeyup="value=value.replace(/[^\d.{1,}]/g,'').replace(/\.{1,}/g,'.')" />
+                <em class="money">万</em>
+            </div>
+            <p class="pageDown">
+                <span class="require">特殊要求</span>
+                <span class="getCar requireSpan">
+                	<span id="2402">裸车</span>
+                	<span id="2402">裸车</span>
+                	
+                	<span id="2402">裸车</span>
+                	<span id="2402">裸车</span>
+                	<span id="2402">裸车</span>
+                </span>
+            </p>
+            
+            <p class="pageDown"><span class="region">备注</span><textarea placeholder="请输入备注"></textarea></p>
+            <button class="findCarBtn confirmReleaseBtn">确认发布</button>
+        </div>
+    </div>
+</div>
+<footer></footer>
+</body>
+<script src="js/common/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!--弹框插件-->
+<script src="layer/layer.js" type="text/javascript"></script>
+<script src="js/frame/frame.js" type="text/javascript"></script>
+<!--该页面中有用到公共组件，控件需要引用-->
+<script src="js/common/common.js" type="text/javascript"></script>
+<!--每个页面必须引用，公共view js的入口-->
+<script src="js/common/swiper.min.js" type="text/javascript"></script>
+<script src="js/common/jquery.flexslider.js" type="text/javascript"></script>
+<script src="js/common/laypage.js" type="text/javascript"></script>
+<!-- <script src="js/view/main_find_car_want.js"></script> -->
+</html>

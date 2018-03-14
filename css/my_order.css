@@ -1,0 +1,400 @@
+@charset "utf-8";
+/* CSS Document */
+
+.myOrder {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    /*margin-bottom: 90px;*/
+}
+
+.myOrder h1 {
+    text-align: left;
+    font-size: 22px;
+    color: #111;
+    margin: 15px 0px;
+    border-left: 5px solid #c43027;
+    padding-left: 10px;
+}
+
+.lineRed {
+    height: 2px;
+    background: #c43027;
+}
+.box{
+    background-color: white;
+    /*margin-bottom: 20px;*/
+}
+.myOrderClassify {
+    text-align: left;
+    font-size: 18px;
+    margin: 0px 15px;
+    /*margin-bottom: 10px;*/
+   border-bottom: 1px solid #E4E4E4;
+}
+.myOrderClassify span:nth-child(2){
+	margin: 0px 6px;
+}
+.myOrderClassify span {
+    display: inline-block;
+   /* margin-right: 50px;*/
+    /*margin-top: 20px;*/
+    padding-bottom: 10px;
+    width: 55px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.selectedCss {
+    border-bottom: 3px solid #e30e11;
+    color: #e30e11;
+}
+.myOrder .nav{
+	height: 45px;
+    border: 1px solid #E4E4E4;
+    margin: 0 15px;
+    /*border-bottom: none;*/
+    margin-top: 20px;
+    background: #f6f8fb;
+}
+.myOrder ul {
+
+    padding: 0 15px;
+    /*margin-bottom: 40px;*/
+}
+.myOrder ul li:nth-child(1){
+	border-top: none;
+}
+.myOrder li {
+    padding: 0px 0 10px 0;
+    text-align: left;
+    border: 1px solid #e4e4e4;
+    /* padding-left: 20px; */
+    border-bottom: none;
+    height: 135px;
+    padding-top: 10px;
+}
+
+.orderNumber {
+    margin-bottom: 10px;
+    height: 45px;
+    line-height: 45px;
+    /*padding-left: 20px;*/
+  /*  background-color: #f5f5f5;*/
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.orderStatus .pocket{
+	float: left;
+    margin-top: 59px;
+    margin-left: 50px;
+    color: #e54c23;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    /*text-overflow: ellipsis;
+    white-space: nowrap;*/
+    width: 72px;
+    text-align: center;
+}
+.orderStatus .number{
+	text-align: center;
+	float: left;
+    margin-top: 59px;
+    margin-left: 38px;
+    overflow: hidden;
+    width: 30px;
+}
+.orderStatus .unfinished1,.orderStatus .over2,.orderStatus .over1{
+	text-align: center;
+	float: left;
+    margin-top: 59px;
+    margin-left: 58px;
+    color: #a0a0a0;
+    overflow: hidden;
+    width: 49px;
+}
+.orderStatus .over5,.orderStatus .over4{
+	text-align: center;
+	float: left;
+    margin-top: 59px;
+    margin-left: 66px;
+    color: #ff8c11;
+    overflow: hidden;
+    width: 49px;  
+}
+.orderStatus .caozuo{
+	display: inline-block;
+    margin-left:70px;
+    margin-top: 30px;
+}
+.orderNumber span:nth-child(2) {
+    color: #999;
+    float: right;
+    margin-right: 20px;
+    cursor: auto;
+}
+
+.myOrder li .carImg {
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-left: 15px;
+    float: left;
+    height: 130px;
+    width: 130px;
+}
+
+.myOrder li img{
+    width: 100%;
+    height: 100%;
+}
+
+.myOrder .describeR {
+   float: left;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 20px;
+    width: 260px;
+   
+}
+
+.describeR p {
+    font-size: 16px;
+    color: #666;
+    line-height: 25px;
+    white-space: pre-wrap;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+  
+    
+}
+
+.describeR p:first-child {
+    font-size: 16px;
+    color: #333;
+   
+}
+
+.describeR p:nth-child(2) {
+    font-size: 22px;
+    color: #c43027;
+}
+
+.describeR p:nth-child(2) span {
+    color: #666;
+    font-size: 16px;
+}
+
+.describeR em {
+    font-size: 16px;
+}
+
+.submitBtn {
+    border-top: 1px solid #e4e4e4;
+    text-align: right;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.submitBtn button {
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #c43027;
+    color: #c43027;
+    background: none;
+    cursor: pointer;
+}
+
+.submitBtn button:last-child {
+    background: #c43027;
+    color: #fff;
+}
+
+.myOrder li:last-child {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lookOver {
+  
+    color: #e54c23;
+    border: 1px solid #e54c23;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+/* .appraise {
+    color: #FFF;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    background:#e54c23 ;
+} */
+.evaluate4{
+    color: #FFF;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    background:#e54c23 ;
+}
+.continue,.sureResive{
+    color: #FFF;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    background:#e54c23 ;
+}
+.evaluate5{
+    color: #FFF;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    background:#C9C6C6 ;
+    cursor: auto;
+}
+.delivery{
+	margin-top: 20px;
+}
+/*-----未完成订单-----*/
+.myOrder ul .UnorderForm {
+    color: #c43027;
+}
+
+.jumpPage {
+    padding: 40px 0;
+    /*margin-bottom: 40px;*/
+    height: 30px;
+    text-align: center;
+    color: #666;
+}
+
+.pageOne, .pageTwo, .pageThree, .pageFour {
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    background: url(../imgs/page.png) no-repeat;
+    background-size: 100px auto;
+    background-position: 1px 1px;
+    margin: 0 5px;
+    margin-bottom: -3px;
+}
+
+.pageTwo {
+    background-position: -10px 1px;
+}
+
+.pageThree {
+    background-position: -22px 1px;
+}
+
+.pageFour {
+    background-position: -33px 1px;
+    margin-right: 20px;
+}
+
+.jumpPage span {
+    color: #666;
+}
+
+.jumpPage em {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #f25854;
+    border-radius: 50px;
+    line-height: 30px;
+    margin: 0 10px;
+    margin-top: -2px;
+}
+
+.jumpPage input, .jumpPage button {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #e4e4e4;
+    margin: 0 10px;
+    border-radius: 5px;
+    padding-left: 5px
+}
+
+.jumpPage button {
+    background: none;
+    text-align: center;
+    border-color: #c43027;
+    margin-left: 0px;
+    color: #c43027;
+    padding: 0px;
+}
+
+.navigationBarUl li:nth-child(5) {
+    /*background: #c43027 !important;*/
+    border:2px solid #f2f1f1;
+    border-bottom:3px solid #cc1612;
+}
+
+.orderList:nth-child(2) {
+    background: #dd2c26;
+    color: #fff !important;
+    border-radius: 0px 50px 50px 0px
+}
+
+.orderList:nth-child(2) a {
+    color: #fff;
+}
+
+.orderList:nth-child(2) em {
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    background: url(../imgs/personal_icon.png) no-repeat;
+    background-position: -26px 0px !important;
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
+
+
+/****实现导航根据右侧内容高度动态变化****/
+.pesonalCenterHome{
+    position: relative;
+}
+.pesonalCenterHomeL{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.pesonalCenterHomeR{
+    margin-left: 240px;
+}
+.pingjia{
+    color: #FFF;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+    background: #C9C6C6;
+    cursor: auto;
+}
+/****end 实现导航根据右侧内容高度动态变化****/

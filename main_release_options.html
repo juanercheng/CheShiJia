@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="screen-orientation" content="portrait"><!--强制竖屏-->
+<meta name="format-detection" content="telephone=no"><!-- 禁用自动识别电话号码 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>发布车源</title>
+
+<link href="css/common.css" rel="stylesheet">
+<link href="layer/skin/layer.css" rel="stylesheet"><!--弹框css-->
+<link href="css/main_release_options.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header class="findCarWant"></header>
+<!--start header-->
+<div class="releaseOptions">
+    <div class="releaseOptionsC">
+        <div class="detailTitle">
+            <div class="add">
+                <span>发布车源</span>
+                <span></span>
+                <span>填写详细信息</span>
+        </div>
+            <div class="edit" style="display:none;">
+                <span class="personalCenter1">个人中心</span>
+                <span></span>
+                <span class="mySourse">我的资源</span>
+                <span></span>
+                <span>编辑</span>
+            </div>
+        </div>
+        <p class="release">
+            <span></span>
+            <span>超过六条，推荐您使用<a href="batch_release.html">批量发布</a>功能</span>
+        </p>
+        <p class="pageDown">
+            <span>车辆信息</span>
+            <span class="carStandard" >
+                    <i class="primary">
+                        <i class="gGB">请选择规格</i>
+                        <i class="pPB">/品牌</i>
+                        <i class="cXB">/车系</i>
+                        <i class="_cXB">/车型</i>
+                    </i>
+                    <em></em>
+                </span>
+        </p>
+        <p class="pageDown"><span>外观/内饰颜色</span>
+            <span class="carColor">
+                <span class="carColor_text ">请选择</span>
+                <input class="carColor_input  carColor_input1" placeholder="请输入外观颜色" style="display: none;  margin-left: -11px;margin-top: -3px;width: 300px;color: #333">
+                <input class="carColor_input  carColor_input2" placeholder="请输入内饰颜色" style="display: none;  margin-left: -11px;margin-top: -3px;width: 313px;color: #333">
+            </span>
+        </p>
+        <p class="pageDown"><span>库存</span><input class="stock" placeholder="请输入库存"  maxlength="20"
+                                                  type="text" onkeyup="value=value.replace(/[^\d.{1,}]/g,'').replace(/\.{1,}/g,'.')" /></p>
+        <p class="pageDown">
+            <span>提车区域</span>
+            <span class="getCar getCarArea">
+            </span>
+        </p>
+
+        <p class="pageDown">
+            <span>销售区域</span>
+            <span class="getCar regionArea">
+            </span>
+        </p>
+
+        <p class="pageDown">
+            <span>车辆状态</span>
+            <span class="getCar carStatus">
+            </span>
+        </p>
+        <div class="pageDown expect">
+            <p>
+                <span>期望成交价</span>
+                <span>(不填将显示电议)</span>
+            </p>
+            <span class="getCar">
+
+                </span>
+            <input class="priceNum" placeholder="请输入优惠点数" type="text"  maxlength="20"
+                   onkeyup="value=value.replace(/[^\d.{1,}]/g,'').replace(/\.{1,}/g,'.')" />
+            <em class="money">万</em>
+        </div>
+        <p class="pageDown"><span>定金金额</span><input class="payMoney"   maxlength="20"
+                                                    placeholder="请输入定金金额" type="text" onkeyup="value=value.replace(/[^\d.{1,}]/g,'').replace(/\.{1,}/g,'.')" />
+            <em class="money">元</em></p>
+
+        <p class="pageDown">
+            <span class="require">特殊要求</span>
+            <span class="getCar requireSpan">
+                </span>
+        </p>
+
+        <p class="pageDown"><span class="region">备注</span><textarea placeholder="请输入备注"  maxlength="100"></textarea></p>
+        <button class="findCarBtn confirmReleaseBtn">确认发布</button>
+
+
+        <div class="intDispalynone carCssAdd" id="test">
+            <p class="intCheck guiGe"><span>规格：</span></p>
+            <p class="intCheck pinPai"><span>品牌：</span></p>
+            <p class="intCheck cheXi"><span>车系：</span></p>
+            <p class="intCheck cheXing"><span>车型：</span></p>
+            <p class="intCheck Years"><span>年份：</span></p>
+            <p class="intCheck cheXingPeiZhi"><span>车型配置：</span></p>
+        </div><!--汽车规格-->
+        <div class="intDispalynColor carCssAdd"></div>
+        <!--颜色-->
+        <div class="carColor_choose" id="carColor_choose" >
+            <div class="colorBox">
+                <div class="out">
+                    <h2  style="background: #F3F3F3">外观颜色：</h2>
+                    <div class="outColor">
+                        <ul class="outColorUl1"></ul>
+                        <div  style="text-align: left">
+                            <input class='shuru1'  type='text' placeholder='请输入外观颜色（多个使用“，”隔开）' />
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="In">
+                    <h2 style="background: #F3F3F3">内饰颜色：</h2>
+                    <div class="outColor">
+                        <ul class="outColorUl2"></ul>
+                    </div>
+                    <div  style="text-align: left">
+                        <input class='shuru' type='text' placeholder='请输入内饰颜色（多个使用“，”隔开）' />
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="btnBox">
+                <button class="colorBtn">确认</button>
+                <button class="colorBtn1">取消</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--end footer-->
+<footer></footer>
+</body>
+
+<script src="js/common/jquery-1.10.2.min.js" type="text/javascript"></script>
+<!--弹框插件-->
+<script src="layer/layer.js" type="text/javascript"></script>
+<script src="js/frame/frame.js" type="text/javascript"></script><!--该页面中有用到公共组件，控件需要引用-->
+<script src="js/common/common.js" type="text/javascript"></script><!--每个页面必须引用，公共view js的入口-->
+<script src="js/common/jquery-form.js" type="text/javascript"></script><!--每个页面必须引用，公共view js的入口-->
+<script src="js/view/main_release_options.js" type="text/javascript"></script>
+</html>

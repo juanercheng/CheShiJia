@@ -1,0 +1,225 @@
+.myOrder {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 200px;
+    width: 900px;
+    border: 1px solid #e4e4e4;
+}
+.pesonalCenterHomeR p {
+    margin: 20px 0px;
+   
+}
+.pageDown {
+    position: relative;
+}
+.pesonalCenterHomeR p > span:nth-of-type(1) {
+    display: inline-block;
+    font-size: 16px;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.pesonalCenterHomeR input, textarea {
+    width: 660px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+    border-left: none;
+    border-right:none ;
+    padding-left: 10px;
+    color: #999;
+    resize: none;
+    font-size: 16px;
+    padding-right: 40px;
+    margin-left: 3px;
+}
+
+
+
+.pageDown .carStandard, .pageDown .carTime, .pageDown .carColor, pageDown .carStatus {
+    display: inline-block;
+    width: 700px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+    border-left:none ;
+    border-right:none ;
+    padding-left: 10px;
+    color: #ababab;
+    resize: none;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+/*.carStandard {
+    margin-left: -2px !important;
+}*/
+main_release_options.css:148
+.carTime, .carStandard, .carColor {
+    cursor: pointer;
+}
+.carStandard .primary {
+    color: #333;
+}
+main_release_options.css:225
+.carStandard i {
+    font-style: normal;
+    color: #ababab;
+    width: 340px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 28px;
+}
+.pageDown em {
+    position: absolute;
+    top: 18px;
+    right: 180px;
+    background: url(../imgs/page_down.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    color: #999;
+}
+.carStandard i {
+    font-style: normal;
+    color: #ababab;
+    width: 340px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 28px;
+}
+.getCar {
+    width: 712px;
+    margin: 0 3px;
+    text-align: left;
+    font-size: 0;
+    vertical-align: middle;
+}
+.getCar span {
+    font-size: 16px;
+    border: 1px solid #d43712;
+    padding: 8px 30px;
+    margin-right: 10px;
+    color: #d43712;
+    margin-bottom: 10px;
+}
+.expect {
+    margin-bottom: 20px;
+}
+main_release_options.css:80
+.pageDown {
+    position: relative;
+}
+.expect > p {
+    width: 35%;
+}
+
+
+.expect > p span:nth-of-type(2) {
+    color: #999;
+}
+
+
+.expect input {
+    margin-left: 19%;
+    margin-top: 10px;
+}
+.releaseOptions input, textarea {
+    width: 660px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e4e4e4;
+    padding-left: 10px;
+    color: #999;
+    resize: none;
+    font-size: 16px;
+    padding-right: 40px;
+    margin-left: 3px;
+}
+
+.expect .getCar {
+    margin-left: 19%;
+}
+.getCar {
+    width: 712px;
+    margin: 0 3px;
+    text-align: left;
+    font-size: 0;
+    vertical-align: middle;
+}
+.pageDown em {
+    position: absolute;
+    top: 18px;
+    right: 180px;
+    background: url(../imgs/page_down.png) no-repeat;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    color: #999;
+}
+.pageDown .money {
+    background: none;
+}
+.expect em {
+    top: 103px;
+    width: 16px;
+    height: 16px;
+}
+textarea {
+    width: 690px;
+    padding-right: 10px;
+    line-height: 25px;
+    padding-top: 5px;
+}
+textarea {
+    height: 120px;
+    vertical-align: top;
+}
+.confirmReleaseBtn {
+    width: 180px;
+    height: 50px;
+    background: linear-gradient(to right,#e64f23,#db2427);
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+.myOrder {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    width: 900px;
+   cursor: pointer;
+}
+.pesonalCenterHome {
+    position: relative;
+}
+.pesonalCenterHomeR {
+    margin-left: 240px;
+}
+.nBList:nth-child(5) {
+    /* background: #c43027; */
+    border: 2px solid #f2f1f1;
+    border-bottom: 3px solid #cc1612;
+}
+.orderList:nth-child(5) {
+    background: #dd2c26;
+    color: #fff !important;
+    border-radius: 0px 50px 50px 0px;
+}
+.orderList:nth-child(5) a {
+    color: #fff;
+}
+.pesonalCenterHomeL {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+/*.hotCar {
+    margin-bottom:50px;
+}*/
+.recommendT {
+    font-size: 0;
+    /*max-height: 866px;*/
+    /*overflow-y: hidden;*/
+    /*display: inline-block;*/
+}
+
+.SearchCar li {
+   /* margin-top: 20px;*/
+    margin-left: 20px;
+}
+.recommendT li {
+    /*display: inline-block;*/
+   float: left;
+   margin-right: 15px;
+   margin-bottom: 30px;
+    vertical-align: top;
+}
+.informationCar {
+    border: 1px solid #dcdcdc;
+    width: 283px;
+    font-size: 14px;
+    background: white;
+}
+.carInfo span {
+    margin-right: 20px;
+}
+.informationCar .model{
+	font-size: 15px;
+	/*font-weight: bold;*/
+	text-align: left;
+}
+.carInfo div span,.address{
+	text-align: left;
+}
+.carBottom .star7 img:nth-of-type(1){
+	margin-left: 26px;
+}
+.carBottom div:nth-of-type(1) {
+	
+   overflow: initial;
+ 
+}
+
+
+
+
+

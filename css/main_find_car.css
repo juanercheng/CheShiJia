@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.fingCar {
+    width: 1200px;
+    margin: auto;
+    box-shadow: 0 5px 10px #e6e6e6;
+}
+
+/*===========sectionTwo===============*/
+
+.nBList:nth-child(3) {
+    border:2px solid #f2f1f1;
+    border-bottom:3px solid #cc1612;
+}
+section{
+    background: white;
+}
+.findCarBtn {
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    width: 220px;
+    background: #c43027;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    margin:40px 0 25px;
+    background: linear-gradient(to right,#e64f23,#db2427);
+}
+.findCarBtn span{
+    content: "";
+    background: url("../imgs/mycar.png") no-repeat;
+    width: 19px;
+    height: 19px;
+    vertical-align: sub;
+    margin-right:10px;
+}
+
+
+.recommendT {
+    margin-bottom:45px;
+    padding-left: 12px;
+    background: white;
+    font-size: 0;
+}
+.recommendT li{
+    display: inline-block;
+    margin:15px 0;
+    margin-right:12px;
+}
+.recommendT .shopInfo ,.recommendT .priceInfo{
+    cursor: pointer;
+}
+/*==============分页===============*/
+.jumpPage {
+
+padding-bottom:100px;
+height: 30px;
+text-align: right;
+color: #666;
+text-align: center;
+}
+.jumpPage .laypage_main *{
+font-size:16px;
+}
+.jumpPage .laypageskin_molv a{
+border:1px solid #a6a6a6;
+}
+.jumpPage .laypage_main input{
+padding-left: 5px;
+padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+

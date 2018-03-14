@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+
+.myOrder {
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 90px;
+    width: 900px;
+}
+
+.myOrder h1 {
+    text-align: left;
+    font-size: 22px;
+    color: #111;
+    margin: 15px 0px;
+    border-left: 5px solid #c43027;
+    padding-left: 10px;
+}
+
+.lineRed {
+    height: 2px;
+    background: #c43027;
+}
+.box{
+    background-color: white;
+}
+
+.myOrder ul {
+    padding: 20px;
+    margin-bottom: 5px;
+    border: 1px solid #E4E4E4;
+}
+
+.myOrder li {
+    padding: 15px 0;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: none;
+    background-color: #f5f5f5;
+}
+
+.myOrder li img {
+    margin-top: 3px;
+    margin-right: 20px;
+}
+
+.myOrder .describeR {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.describeR p {
+    font-size: 16px;
+    color: #666;
+    line-height: 25px;
+}
+
+.describeR p:first-child {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.describeR p:nth-child(2) {
+    font-size: 22px;
+    color: #E54c23;
+    margin-bottom: 10px;
+}
+
+.describeR p:nth-child(2) span {
+    color: #666;
+    font-size: 16px;
+}
+
+.describeR em {
+    font-size: 16px;
+}
+
+.carImg {
+    height: 130px;
+    width: 130px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.carImg img{
+    width: 100%;
+    height: 100%;
+}
+textarea {
+    width: 810px;
+    height: 190px;
+    border: 1px solid #e4e4e4;
+    font-size: 16px;
+    color: #333;
+    line-height: 27px;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.myOrder button {
+    width: 150px;
+    height: 44px;
+    background: #E54C23;
+    color: #fff;
+    font-size: 18px;
+   /* border-radius: 5px;*/
+    margin-top: 80px;
+}
+
+.myOrder p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.checkComment {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.checkComment label {
+    margin-right: 100px;
+}
+
+.checkComment input[type="radio"] {
+    margin: 3px 3px 0px 5px;
+    display: none;
+}
+
+.checkComment label {
+    padding-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+   /* background: url(../imgs/comment.png) no-repeat;*/
+    background-position: -220px -9px;
+}
+.checkComment .gonds{
+	background: url(../imgs/good.png) no-repeat;
+}
+.checkComment .Mreview{
+	background: url(../imgs/Mreview.png) no-repeat;
+}
+.checkComment .Ncomment{
+	background: url(../imgs/Ncomment.png) no-repeat;
+}
+/*.checkComment label.checked {
+    background-position: -10px -9px;
+}*/
+
+.navigationBarUl li:nth-child(5) {
+   border: 2px solid #f2f1f1;
+    border-bottom: 3px solid #cc1612;
+}
+
+.checkComment label {
+    padding-left: 35px;
+}
+
+.orderList:nth-child(2) {
+        background: #dd2c26;
+    color: #fff !important;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.orderList:nth-child(2) a {
+    color: #fff;
+}
+
+.orderList:nth-child(2) em {
+    display: inline-block;
+    width: 26px;
+    height: 24px;
+    background: url(../imgs/personal_icon.png) no-repeat;
+    background-position: -26px 0px !important;
+    margin-right: 10px;
+    margin-bottom: -3px;
+}
